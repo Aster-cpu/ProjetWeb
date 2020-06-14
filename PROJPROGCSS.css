@@ -1,0 +1,90 @@
+*  { box-sizing: border-box; font-family: georgia;}
+#image{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 400px;
+    border-radius : 50px;
+}
+
+h2{	
+	font-family: georgia;
+	color: #333435; 
+	text-align: center;
+
+}
+
+div{
+	display:block;
+	background-color: white;
+	width:1100px;
+	margin:auto;
+	box-shadow: 4px 5px 10px grey;
+}
+
+#lanimal{
+	font-family: georgia;
+	text-align: center;
+	font-size: 31px;
+}
+
+#ladescription{
+	display: flex;
+	font-size: 18px;
+	font-family: georgia;
+	width: 1000px;
+	height: 300px;
+	margin: auto;
+	border-bottom: solid;
+	margin-bottom: 80px;
+
+}
+
+#lapage{
+	background-color: lightgrey;
+}
+
+#nbmorts{
+	display:flex;
+	font-size:18px;
+	font-family: georgia;
+	margin: auto;
+	width: 1000px;
+	height: 100px;
+	border-bottom: solid;
+	margin-bottom: 80px;
+}
+
+#compteur{
+	font-family: georgia;
+}
+
+#methode{
+	display:flex;
+	font-size:18px;
+	font-family: georgia;
+	margin: auto;
+	width: 1000px;
+	height: 180px;
+	margin-bottom: 80px;
+}
+#travail{
+	display: block;
+	font-size: 18px;
+	font-family: georgia;
+	width: 1000px;
+	height: 100px;
+	margin: auto;
+	text-align: center;
+}
+
+#lediv{
+	border-radius : 10px;
+	border:solid;
+	border-color:grey;
+}
+
+.centre{
+	text-align: center;
+}

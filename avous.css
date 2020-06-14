@@ -1,0 +1,254 @@
+*  { box-sizing: border-box; font-family: georgia;}
+
+h1{
+	text-align: center;
+}
+
+.cadre{
+	width: 180px;
+}
+
+
+form{
+display: table;
+margin-right: auto;
+margin-left: auto;
+
+}
+div{
+	display: table-row;
+}
+
+label, input,textarea,select {
+    margin-bottom: 10px;
+    margin-top:  10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img{
+	width: 75px;
+	border-radius : 75px;
+	box-shadow: 4px 5px 12px grey;
+}
+
+li{
+	display: inline;
+}
+
+
+input{
+	margin-top: 10px;
+	border:none;
+	border-bottom: solid;
+	border-color: grey;
+	padding:1px;
+}
+input:not(:valid) {
+	border: none;
+	border-bottom: 1px solid #FF0000;
+	caret-color: #FF0000;
+}
+
+table{
+	text-align: center;
+	border-collapse: collapse;
+	overflow-x:auto;
+}
+tr {
+	padding: 5px;
+	border-top: 1px solid #AAAAAA;
+}
+
+
+body{
+	 background-color: lightgrey;
+}
+
+
+.morttt{
+	border: 5px solid red;
+}
+
+td{
+	border-left: 2px solid #AAAAAA;
+	border-right: 2px solid #AAAAAA;
+	border-bottom: 2px solid #AAAAAA;
+	padding: 5px;
+	box-shadow: 4px 5px 12px grey;
+	
+}
+
+#nouv1{
+	/*background-color: #e0fffc;*/
+	background-image: url("nuage.jpg");
+}
+#nouv2{
+	/*background-color: #c2a051;*/
+	background-image: url("terre.jpg");
+}
+#nouv3{
+	/*background-color: #5995ff;*/
+	background-image: url("eau.jpg");
+}
+
+
+.wrapper {
+  margin: 80px auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  }
+.button {
+  padding: 15px 50px;
+  margin:10px 4px;
+  color: #000000;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display:inline-block;
+  border:1px solid ;
+  }
+
+.button:hover{
+  color:white;  
+  background-color: black;
+  }
+
+
+  .ico {
+  display: block;
+  height: 300px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+ 
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s
+}
+ 
+.sidenav a:hover, .offcanvas a:focus{
+    color: lightgrey;
+}
+ 
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+
+  transition: margin-left .5s;
+  padding: 20px;
+  overflow:hidden;
+  width:100%;
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+ 
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+ 
+.topnav a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+ 
+.topnav a.active {
+    background-color: white;
+    color: black;
+}
+ 
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+ 
+a svg{
+  transition:all .5s ease;
+ 
+  &:hover{
+    #transform:rotate(180deg);
+  }
+}
+
+#ico{
+  display: none;
+}
+
+.menu{
+  background: white;
+  display: none;
+  padding: 5px;
+  width: 320px;
+  @include border-radius(5px);
+ 
+  #transition: all 0.5s ease;
+ 
+  a{
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 10px 2px;
+    margin: 3px 0;
+    text-decoration: none;
+    background: white;
+ 
+    &:nth-child(1){
+      margin-top: 0;
+      @include border-radius(3px 3px 0 0 );
+    }
+    &:nth-child(5){
+      margin-bottom: 0;
+      @include border-radius(0 0 3px 3px);
+    }
+ 
+    &:hover{
+      background: white;
+    }
+  }
+}
+
+.miseform{
+  display:block;
+  background-color: white;
+  width:1100px;
+  margin:auto;
+  box-shadow: 4px 5px 10px grey;
+}

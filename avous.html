@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="avous.css" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="home.css" />
+	<script type="text/javascript" src="home.js"></script>
+	<title>Animakill - A vous de jouer !</title>
+</head>
+<body >
+	<div id="sideNavigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">Accueil</a>
+        <a href="Moustique.html">Moustique</a>
+        <a href="Mouche_tse-tse.html">Mouche</a>
+        <a href="Serpent.html">Serpent</a>
+        <a href="Ver_Solitaire.html">Ver solitaire</a>
+        <a href="Chien.html">Chien</a>
+        <a href="avous.html">A vous de jouer</a>
+      </div>
+       
+      <nav class="topnav">
+        <img class="ico" src="image/logodef.png">
+        <a href="#" onclick="openNav()">
+          <svg width="30" height="30" id="icoOpen">
+              <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+              <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+              <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+          </svg>
+        </a>
+      </nav>
+    <section class="miseform">
+	<h1> Créez vous même le nouvel animal le plus dangereux au monde !</h1>
+	<form>
+		
+			<div>	        
+		        <fieldset>
+				  <legend> Emoticône de l'animal: </legend>
+				  <ul>
+				    <li>
+				      	<img src="img1.png">
+		        		<input type="radio" id="img1" name="img" value="img1" required>
+				    </li>
+				    <li>
+				     	<img src="img2.png">
+		        		<input type="radio" id="img2" name="img" value="img2" required>
+				    </li>
+				    <li>
+				        <img src="img3.png">
+		        		<input type="radio" id="img3" name="img" value="img3" required>
+				    </li>
+				    <li>
+				    	<img src="img4.png">
+		        		<input type="radio" id="img4" name="img" value="img4" required>
+				    </li>
+				    <li>
+				    	<img src="img5.jpg">
+		        		<input type="radio" id="img5" name="img" value="img5" required>
+				    </li>
+				    <li>
+				    	<img src="img6.png">
+		        		<input type="radio" id="img6" name="img" value="img6" required>
+				    </li>
+				  </ul>
+				</fieldset>
+	        </div>
+			<div>
+			<label> Animal : </label><br>
+	        <input type="text" id="nom_animal" class="cadre" placeholder="Entrez le nom de l'animal" required>
+	        </div>
+	        <div>
+	        <label> Localisation : </label><br>
+	        <input type="text"  id="loca_animal" class="cadre" placeholder="Localisation de l'animal" required>
+	        </div>
+	        <div>
+	        <label> Description : </label><br>
+	        <textarea cols="30" rows="3" type="text"  id="descri_animal" placeholder="Expliquez pourquoi votre animal est dangereux" required></textarea>
+	        </div>
+	        <div>
+	        <label> Milieu de vie : </label><br>
+			<select id="milieu_animal" required>
+			    <option value="">--Choisir le milieu de vie de l'animal--</option>
+			    <option value="Air">Air</option>
+			    <option value="Terre">Terre</option>
+			    <option value="Mer">Mer</option>
+			</select>
+			</div>
+			<div>
+				<label> Nombre de mort par seconde: </label><br>
+		        <input type="number" id="nbmort_animal" class="cadre" placeholder="Entrez le nombre de mort/seconde" value="0" required>
+	        </div>
+		
+		<div class="wrapper">
+			<span class="button" onclick="ajouter()" onclick=" compteur()" >Valider<span id="decompte"></span></span>
+			<span class="button" onclick="supprimer()"  >Extinction de vos animaux</span>
+		</div>
+		<br>
+		<div>
+			<label class="morttt"> Nombre de morts totaux de vos animaux: <span id="compte"></span></label>
+		</div>
+	</form>
+	<br>
+	<main>
+		<caption> Animal(aux) crées : </caption><br>
+		
+		<table id="table">
+			<tr>
+			<div id="image">
+				
+			</div></tr>
+		</table>
+
+
+
+
+	</main>
+</section>
+
+
+
+<script src="avous.js" defer></script>
+</body>
+<footer>
+		
+	    <h1>Copyright 2020 - Animakill - Site de top animalier</h1>
+	    <ul>
+	    	<a href="QuiSommesNous.html">Qui sommes nous ?</a>
+	    	<img class="icone" src="twitter.png"> <a href="https://twitter.com/Efrei_Paris">Le compte Twitter </a>
+	    	<img class="icone" src="instagram.png"><a href="https://www.instagram.com/efrei_paris">Le compte Instagram </a>
+	    	<img class="icone" src="facebook.png"><a href="https://www.facebook.com/Efrei">Le compte Facebook </a>
+	    </ul>
+	
+</footer>
+
+
+</html>
